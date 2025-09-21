@@ -2,6 +2,6 @@ services:
   - type: web
     name: food-insta-backend
     env: node
-    buildCommand: "npm install"
-    startCommand: "npm run dev"
+    buildCommand: "cd Backend && npm install"
+    startCommand: "cd Backend && npm run dev"
     plan: free
