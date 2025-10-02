@@ -8,7 +8,14 @@ const cors = require('cors');
 
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: [
+        "http://localhost:5173",
+        "https://localhost:5173",
+        "https://food-insta-frontend.vercel.app",
+        "https://food-insta-frontend.netlify.app",
+        "https://nikhil-kumar92976.netlify.app"
+        
+    ],
     credentials: true
 }));
 app.use(express.json());

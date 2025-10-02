@@ -41,7 +41,7 @@ const CreateFood = () => {
       const authToken = localStorage.getItem('authToken');
 
       // Make API call to create food item
-      const response = await fetch('http://localhost:3000/api/food', {
+      const response = await fetch('https://food-insta-3.onrender.com/api/food', {
         method: 'POST',
         body: submitData,
         credentials: 'include', // Include cookies

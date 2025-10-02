@@ -17,7 +17,7 @@ const UserRegister = () => {
         const password = e.target.password.value;
 
 
-        const response = await axios.post("http://localhost:3000/api/auth/register", {
+        const response = await axios.post("https://food-insta-3.onrender.com/api/auth/register", {
             fullname: firstName + " " + lastName,
             email,
             password

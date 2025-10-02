@@ -84,7 +84,7 @@ const UserProfile = () => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/auth/profile", {
+        const response = await fetch("https://food-insta-3.onrender.com/api/auth/profile", {
           method: "GET",
           credentials: "include", // important for cookies
           headers: {
@@ -117,7 +117,7 @@ const UserProfile = () => {
   const logout = async () => {
     try {
       // Call backend logout
-      await fetch("http://localhost:3000/api/auth/logout", {
+      await fetch("https://food-insta-3.onrender.com/api/auth/logout", {
         method: "GET",
         credentials: "include", // important if using cookies
         headers: {

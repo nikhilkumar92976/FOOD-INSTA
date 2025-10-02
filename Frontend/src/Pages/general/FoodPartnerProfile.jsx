@@ -90,7 +90,7 @@ const FoodPartnerProfile = () => {
     try {
       // Fetch food partner profile data
       console.log('Fetching food partner profile...');
-      const profileResponse = await fetch('http://localhost:3000/api/auth/profile/foodpatner', {
+      const profileResponse = await fetch('https://food-insta-3.onrender.com/api/auth/profile/foodpatner', {
         credentials: 'include' // Include cookies for authentication
       });
 
@@ -103,7 +103,7 @@ const FoodPartnerProfile = () => {
 
       // Fetch foods from API - specific to this food partner
       console.log('Fetching foods from API...');
-      const foodsResponse = await fetch('http://localhost:3000/api/food/getfood', {
+      const foodsResponse = await fetch('https://food-insta-3.onrender.com/api/food/getfood', {
         credentials: 'include' // Include cookies for authentication
       });
 
@@ -130,7 +130,7 @@ const FoodPartnerProfile = () => {
 
       // Debug: Also check all foods to see if any exist
       try {
-        const allFoodsResponse = await fetch('http://localhost:3000/api/food', {
+        const allFoodsResponse = await fetch('https://food-insta-3.onrender.com/api/food', {
           credentials: 'include'
         });
         if (allFoodsResponse.ok) {

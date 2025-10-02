@@ -14,7 +14,7 @@ const FoodPartnerLogin = () => {
       const email = e.target.email.value;
       const password = e.target.password.value;
 
-      const response = await axios.post("http://localhost:3000/api/auth/login/foodpatner", {
+      const response = await axios.post("https://food-insta-3.onrender.com/api/auth/login/foodpatner", {
         email,
         password
       }, { withCredentials: true });

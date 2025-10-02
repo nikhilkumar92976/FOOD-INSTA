@@ -13,7 +13,7 @@ const VideoPlayer = () => {
       try {
         setLoading(true);
         // Fetch all videos and find the specific one
-        const response = await fetch('http://localhost:3000/api/food', {
+        const response = await fetch('https://food-insta-3.onrender.com/api/food', {
           credentials: 'include'
         });
 

@@ -14,7 +14,7 @@ const UserLogin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/login",
+        "https://food-insta-3.onrender.com/api/auth/login",
         { email, password },
         { withCredentials: true } // needed if backend sets cookies
       );

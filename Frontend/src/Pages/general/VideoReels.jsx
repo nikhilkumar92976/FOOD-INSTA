@@ -14,7 +14,7 @@ const VideoReels = ({ goToProfile }) => {
     const fetchVideos = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:3000/api/food');
+        const response = await fetch('https://food-insta-3.onrender.com/api/food');
 
         if (!response.ok) {
           throw new Error('Failed to fetch videos');
